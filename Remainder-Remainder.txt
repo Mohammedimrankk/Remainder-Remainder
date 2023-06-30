@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main(){
+    int x,y,i,sum;
+    sum=0;
+    printf("Enter the first value = ");
+    scanf("%d",&x);
+
+    printf("Enter the second value = ");
+    scanf("%d",&y);
+
+    if (x>y)
+    {
+for ( i = y; i <x; i++)
+    {
+        if ((i%7)==2 || i%7==3)
+        {
+            printf("%d\n",i);
+        }
+    }    
+
+}
+    if (y>x)
+    {
+for ( i = x; i <y; i++)
+    {
+        if (i%7==2 || i%7==3)
+        {
+            printf("%d\n",i);
+        }
+    }    
+}
+}
